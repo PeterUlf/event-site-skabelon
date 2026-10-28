@@ -32,24 +32,39 @@
       </header>
 
       <section class="svg-layout">
-        <div class="svg-placeholder"></div>
+        <div class="svg-placeholder">
+          <svg class="event-map" viewBox="0 0 1344 768">
+            <use class="scene" href="/event-site-skabelon/SVG/band.svg#baggrund"></use>
+            <use class="logo" href="/event-site-skabelon/SVG/band.svg#logoer"></use>
+            <use class="spot" href="/event-site-skabelon/SVG/band.svg#spot"></use>
+
+
+          </svg>
+        </div>
 
         <article class="panel">
           <h2>Udforsk eventet</h2>
           <div class="accordion">
             <!-- TODO: Lav om til details/summary -->
-            <div class="accordion-item">
-              <h3>Punkt 1</h3>
-              <p>Beskriv første område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 2</h3>
-              <p>Beskriv andet område, aktivitet eller del af dit event.</p>
-            </div>
-            <div class="accordion-item">
-              <h3>Punkt 3</h3>
-              <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
-            </div>
+            <details class="accordion-item" id="details-first" data-position="first">
+              <summary>Øl</summary>
+              <div>
+                <p>Beskriv første område, aktivitet eller del af dit event.</p>
+              </div>
+            </details>
+
+            <details class="accordion-item" id="details-second" data-position="second">
+              <summary>Musik</summary>
+              <div>
+                <p>Beskriv andet område, aktivitet eller del af dit event.</p>
+              </div>
+            </details>
+            <details class="accordion-item" id="details-third" data-position="third">
+              <summary>Merch</summary>
+              <div>
+                <p>Beskriv tredje område, aktivitet eller del af dit event.</p>
+              </div>
+            </details>
           </div>
         </article>
       </section>

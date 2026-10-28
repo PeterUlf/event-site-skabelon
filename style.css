@@ -251,3 +251,39 @@ main > * {
   color: inherit;
   text-decoration: none;
 }
+
+.spot {
+  transition: 0.5s;
+  transform-origin: center bottom;
+  translate: var(--x) var(--y);
+}
+
+.event-map[data-position="first"] {
+  --x: -13%;
+  --y: -7%;
+  --progress: 31%;
+
+  .marker-1 {
+    scale: 2;
+  }
+}
+
+.event-map[data-position="second"] {
+  --x: 34%;
+  --y: -2%;
+  --progress: 67%;
+
+  .marker-2 {
+    scale: 2;
+  }
+}
+
+.event-map[data-position="third"] {
+  --x: 12%;
+  --y: -31%;
+  --progress: 100%;
+
+  .marker-3 {
+    scale: 2;
+  }
+}
